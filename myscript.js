@@ -16,3 +16,4 @@ const nums = [2, 9, 11, 15];
 const target = 20;
 const result = sum(nums, target);
 console.log(result);
+
