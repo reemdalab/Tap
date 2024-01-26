@@ -1,0 +1,224 @@
+@import 'helpers.css';
+
+body
+{
+    margin: 0;
+    font-family:'Poppins', sans-serif;
+}
+.header
+{
+    background-color: var(--primary);
+    width: 100%;
+    top: 0;
+    padding: 10px 0 10px 0;
+}
+ul
+{
+    float: left;
+    margin-left: var(--margin-100);
+    margin-right: var(--margin-100);
+}
+
+ul li 
+{
+    list-style: none;
+    font-size: 12px;
+    margin-left: var(--margin-30);
+}
+ul li a
+{
+    text-decoration: none;
+    color:black;
+    margin-left: var(--margin-5);
+}
+ul li i::before
+{
+    font-size: 13px;
+    color:black;   
+}
+ul li:hover i::before,
+ul li:hover a
+{
+    color: var(--orange);
+}
+.top
+{
+    justify-content: center;
+    align-items: center;
+}
+.left 
+{
+    width: 290px;
+    font-family:'Poppins', sans-serif;
+    margin-right: 60px;
+}
+.left h5 
+{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--sky);
+}
+.left h1
+{
+    color: var(--blue);
+}
+.left h1 span
+{
+color: var(--orange);
+}
+.left h6
+{
+    font-weight: 600;
+    font-size: 12px;
+}
+.left h6 a
+{
+    color: var(--blue);
+    text-decoration: none;
+}
+.right
+{
+    margin-left: 60px;
+}
+.left .btns
+{
+    margin-top: var(--margin-50);
+}
+.left .btns button{
+    background-color: var(--white);
+    border: 1px solid var(--blue) ;
+    border-radius: 3px;
+    font-size: 14px;
+    color: var(--blue);
+    border-color: var(--blue);
+    padding: 4px 18px;
+    margin-right: 10px;
+}
+
+.left .btns button:hover {
+    background-color: var(--blue); 
+    box-shadow: 0 2px 4px var(--sky);
+    color: var(--white);
+}
+
+  @media only screen and (min-width:600px ) and (max-width:800px)
+{
+    .header
+    {
+        justify-content: center;
+        width: auto;
+    }
+    .left
+    {
+        margin-right: 0;
+    }
+    .left h5
+    {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width:430px ) and (max-width:600px)
+{
+    .header
+    {
+        justify-content: center;
+        width: auto;
+    }
+    .navbar ul
+    {
+        margin-left: 0;
+        padding: 0;
+    }
+    .left
+    {
+        margin-right: 0;
+        width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .left h5
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .left h1
+    {
+        font-size: 25px;
+    }
+    .right
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0;
+    }
+    .right img
+    {
+        width: 180px;
+        height: 180px;
+    }
+    ul 
+    {
+        margin-right: 0;
+    }
+    .btns
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .btns button
+    {
+        margin: 10px;
+    }
+}
+@media only screen and (min-width:250px ) and (max-width:430px)
+{
+    .header
+    {
+        padding: 0;
+        padding: 20px 0 20px 0;
+    }
+    .top
+    {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .left
+    {
+        margin: 0;
+    }
+    .right
+    {
+        margin: 0;
+    }
+    ul
+    {
+        margin: 0;
+        padding: 0;
+        gap:30px
+    }
+    ul li 
+    {
+        margin: 0;
+    }
+    .end
+    {
+        justify-content: center;
+    }
+    .right img
+    {
+        height: 200px;
+        width: 200px;
+    }
+    .left h5
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .btns
+    {
+        display: flex;
+        justify-content: center;
+    }
+}
